@@ -17,6 +17,8 @@ public class Restaurant {
         for(int i=0;i<MenuOrder.length;i++) {
 		System.out.printf("[%d] %s \t\t Price %d \tBath\n",i+1,MenuOrder[i],PriceOrder[i]);
 	}
+        System.out.println("");
+        System.out.println("Please enter your choice");
         System.out.println("(l) List Order");
 	System.out.println("(p) Print");
         System.out.println("(c) Checkbill");
@@ -31,6 +33,8 @@ public class Restaurant {
     double totalprice =0;
     if(choice.equalsIgnoreCase("p")){
         System.out.println();
+        System.out.println();
+        System.out.println("------------------------------------");
 	System.out.printf("\t |||Print MenuOrder|||\n");
         for (int i = 0; i < PriceOrder.length; i++) {
 	    if (PriceOrder[i] * addOrder.get(i) != 0) {
@@ -40,6 +44,7 @@ public class Restaurant {
         System.out.println();
 	System.out.printf("Total\t \t\t%.2f \tBath\n",totalprice);
 	System.out.println();
+        System.out.println("------------------------------------");
     }
     return totalprice;
     }
