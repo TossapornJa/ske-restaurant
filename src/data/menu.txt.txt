@@ -1,0 +1,8 @@
+// Welcome to SKE restaurant 
+// one menu one price per line
+// Menu name;price;
+// Program will not read the word that start with "//". 
+
+Fish Burger;50
+Hotdog;70
+Noodle;120
